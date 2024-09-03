@@ -122,12 +122,44 @@
 # print(drinks)
 
 # Exercise
-authors = {
-    "Marian Keyes": ["Rachels Holiday", "Watermelon", "The Break"],
-    "Charles Dickens": ["Great Expectations", "Oliver Twist", "A Christmas Carol"],
-    "Stephen King": ["It", "The Shining", "The Stand"]
-}
+# authors = {
+#     "Marian Keyes": ["Rachels Holiday", "Watermelon", "The Break"],
+#     "Charles Dickens": ["Great Expectations", "Oliver Twist", "A Christmas Carol"],
+#     "Stephen King": ["It", "The Shining", "The Stand"]
+# }
 
-author_name = input("Enter an author name: ")
-books = authors.get(author_name, "Author not found")
-print(f"{author_name}'s books; {', '.join(books)}")
+# author_name = input("Enter an author name: ")
+# books = authors.get(author_name, "Author not found")
+# print(f"{author_name}'s books; {', '.join(books)}")
+
+# Tuples
+# Similar to lists but immutable
+# Slighty quicker and uses slightly less memory
+# Use () or no brackets at all 
+# Methods available are count() and index()
+# Built in functions also like zip, max, len ,min etc...
+
+# rectangle = 10, 5
+
+# Sets
+# https://www.w3schools.com/python/python_ref_set.asp
+# No index, unique values 
+
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7, 8}
+
+# Union - Combines sets removes duplicates
+# print(set1.union(set2))
+# outcome {1, 2, 3, 4, 5, 6, 7, 8}
+
+# Intersection - Returns a set, that is the intersection of two other sets
+# print(set1.intersection(set2))
+# outcome {4, 5}
+
+# Difference - Returns a set containing the difference between two or more sets
+# print(set1.difference(set2))
+# outcome - {1, 2, 3}
+
+# Symmetrical difference - Returns a set with the symmetric differences of two sets
+# print(set1.symmetric_difference(set2))
+# outcome {1, 2, 3, 6, 7, 8}
